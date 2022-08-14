@@ -10,11 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kiwi+Maru&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Josefin+Sans&family=Kiwi+Maru&display=swap"
       rel="stylesheet"
     />
     <script
@@ -70,31 +66,64 @@
         <p>
           誰もが気軽に立ち寄れ、音楽によって生まれる新たな出会い。<br />そんな隠れ家を作りたくてBarUPは誕生しました。<br />落ち着いた雰囲気の店内で大人の時間をお過ごしください。<br />皆様のご来店をスタッフ一同、楽しみにしております。
         </p>
+        <video src="barup_img\bar.mov" controls autoplay muted loop></video>
       </section>
       <section class="news inview fadeIn">
         <h2 id="news">NEWS</h2>
         <div class="news_con">
-          <div class="news_box">
-            <img src="barup_img\banner.jpg" />
-            <p class="news_sentence">
-              <span class="day">08/09</span><a href="#">ワンドリンク無料</a
-              ><br />ワンドリンク無料※２杯以上の注文をお願いいたします。
-            </p>
+          <div class="container">
+            <div class="flip_box">
+              <div class="front"></div>
+              <div class="back">
+                <h2>08/09</h2>
+                <p class="b_text">
+                  ワンドリンク無料※２杯以上の注文をお願いいたします。
+                </p>
+              </div>
+            </div>
+
+            <div class="r_wrap">
+              <div class="b_round"></div>
+              <div class="s_round">
+                <div class="s_arrow"></div>
+              </div>
+            </div>
           </div>
-          <div class="news_box">
-            <img src="barup_img\news_2.png" />
-            <p class="news_sentence">
-              <span class="day">07/07</span><a href="#">音楽イベント開催</a
-              ><br />ロック音楽イベント開催！
-            </p>
+
+          <div class="container">
+            <div class="flip_box_2">
+              <div class="front_2"></div>
+              <div class="back">
+                <h2>07/07</h2>
+                <p class="b_text">ロック音楽イベント開催！</p>
+              </div>
+            </div>
+
+            <div class="r_wrap">
+              <div class="b_round_2"></div>
+              <div class="s_round_2">
+                <div class="s_arrow_2"></div>
+              </div>
+            </div>
           </div>
-          <div class="news_box">
-            <img src="barup_img\news_1.png" />
-            <p class="news_sentence">
-              <span class="day">01/01</span
-              ><a href="#">BAR UPグランドオープン</a
-              ><br />ロック音楽好きが集まる大人の秘密基地をテーマに難波に堂々グランドオープン！
-            </p>
+
+          <div class="container">
+            <div class="flip_box_3">
+              <div class="front_3"></div>
+              <div class="back">
+                <h2>01/01</h2>
+                <p class="b_text">
+                  ロック音楽好きが集まる大人の秘密基地をテーマに難波に堂々グランドオープン！
+                </p>
+              </div>
+            </div>
+
+            <div class="r_wrap">
+              <div class="b_round_3"></div>
+              <div class="s_round_3">
+                <div class="s_arrow_3"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -140,7 +169,7 @@
               aria-labelledby="modal-1-title"
             >
               <img src="barup_img\moscomule.jpg" class="product" />
-              <p>モスコミュール 650円</p>
+              <h3>モスコミュール 650円</h3>
               <button
                 class="modal__close"
                 aria-label="Close
@@ -204,7 +233,15 @@
               aria-modal="true"
               aria-labelledby="modal-1-title"
             >
-              <img src="barup_img\beer.jpg" />
+              <video
+                src="barup_img\bar-beer.mov"
+                poster="barup_img\beer.jpg"
+                width="450px"
+                height="350px"
+                controls
+                autoplay
+                muted
+              ></video>
               <p>ビール 550円</p>
               <button
                 class="modal__close"
@@ -268,4 +305,5 @@
   <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
   <script type="text/javascript" src="fedein.js"></script>
   <script type="text/javascript" src="modal.js"></script>
+  <script type="text/javascript" src="news.js"></script>
 </html>
